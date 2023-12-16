@@ -9,7 +9,7 @@ from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 
 # Setting the API key
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 # Build up a chain
 llm = OpenAI(temperature=0)
